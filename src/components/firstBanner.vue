@@ -1,0 +1,42 @@
+<script>
+export default {
+};
+</script>
+<template>
+    <div class="bg-primary">
+        <div class="container">
+            <div class="text-white d-flex justify-content-between pt-5 pb-5">
+                <div>
+                    <img src="/buy-comics-digital-comics.png" alt="">
+                    <span>DIGITAL COMICS</span>
+                </div>
+                <div>
+                    <img src="/buy-comics-merchandise.png" alt="">
+                    <span>DC MERCHANDISE</span>
+                </div>
+                <div>
+                    <img src="/buy-comics-subscriptions.png" alt="">
+                    <span>COMIC SHOP LOCATOR</span>
+                </div>
+                <div>
+                    <img src="/buy-comics-shop-locator.png" alt="">
+                    <span>COMIC SHOP LOCATOR</span>
+                </div>
+                <div>
+                    <img src="/buy-dc-power-visa.svg" alt="">
+                    <span>DC POWER VISA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<style scoped>
+img {
+    width: 60px;
+    height: 60px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+</style>
