@@ -1,6 +1,13 @@
 <script>
 export default {
-};
+    data() {
+        return {
+            vociMenu: [" CHARACTERS", "COMICS", "MOVIES", "TV", "GAMES", "COLLECTIBILIES", "VIDEOS", "FANS", "NEWS", "SHOP"],
+        }
+    },
+    methods: {
+    }
+}
 </script>
 <template>
     <header>
@@ -12,16 +19,8 @@ export default {
                     </div>
                     <div>
                         <ul class="d-flex">
-                            <li>CHARACTERS</li>
-                            <li class="active">COMICS</li>
-                            <li>MOVIES</li>
-                            <li>TV</li>
-                            <li>GAMES</li>
-                            <li>COLLECTIBLES</li>
-                            <li>VIDEOS</li>
-                            <li>FANS</li>
-                            <li>NEWS</li>
-                            <li>SHOP</li>
+                            <li v-for="menu in vociMenu"> {{ menu }} </li>
+                            <div class="active"></div>
                         </ul>
                     </div>
                 </div>
@@ -36,8 +35,13 @@ li {
     padding: 0 .35rem;
     list-style: none;
 }
-.active{
-    color: blue;
-    border-bottom: 2px solid blue;
+
+.active {
+    width: 85px;
+    border-bottom: 5px solid blue;
+    position: absolute;
+    top: 130px;
+    left: 634px;
+
 }
 </style>

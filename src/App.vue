@@ -2,8 +2,9 @@
 import theHeader from './components/theHeader.vue';
 import theFooter from "./components/theFooter.vue";
 import firstBanner from "./components/firstBanner.vue";
+import secondBanner from "./components/secondBanner.vue";
 export default {
-  components: { theHeader, theFooter, firstBanner}
+  components: { theHeader, theFooter, firstBanner, secondBanner }
 };
 </script>
 <template>
@@ -13,6 +14,8 @@ export default {
       <h2 class="pt-5 text-white"> -- Content goes here -- </h2>
     </div>
     <firstBanner></firstBanner>
+    <theFooter></theFooter>
+    <secondBanner></secondBanner>
   </main>
 </template>
 

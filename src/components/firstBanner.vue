@@ -5,7 +5,7 @@ export default {
 <template>
     <div class="bg-primary">
         <div class="container">
-            <div class="text-white d-flex justify-content-between pt-5 pb-5">
+            <div class="p-5 text-white d-flex justify-content-between font-size-14">
                 <div>
                     <img src="/buy-comics-digital-comics.png" alt="">
                     <span>DIGITAL COMICS</span>
@@ -38,5 +38,9 @@ img {
     height: 60px;
     aspect-ratio: 1;
     object-fit: contain;
+}
+
+.font-size-14 {
+    font-size: 14px;
 }
 </style>
