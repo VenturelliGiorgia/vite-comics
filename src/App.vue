@@ -3,23 +3,22 @@ import theHeader from './components/theHeader.vue';
 import theFooter from "./components/theFooter.vue";
 import firstBanner from "./components/firstBanner.vue";
 import secondBanner from "./components/secondBanner.vue";
+import mainContent from "./components/main.vue";
 export default {
-  components: { theHeader, theFooter, firstBanner, secondBanner }
+  components: { theHeader, theFooter, firstBanner, secondBanner, mainContent }
 };
 </script>
 <template>
   <theHeader></theHeader>
-  <main class="bg-black" style="height: 150px;">
-    <div class="container mt-3 pb-5">
-      <h2 class="pt-5 text-white"> -- Content goes here -- </h2>
-    </div>
+  <main>
+    <mainContent></mainContent>
     <firstBanner></firstBanner>
-    <theFooter></theFooter>
-    <secondBanner></secondBanner>
   </main>
+  <theFooter></theFooter>
+  <secondBanner></secondBanner>
 </template>
 
 
-<style scoped>
-
+<style lang="scss">
+@use "./styles/general.scss";
 </style>

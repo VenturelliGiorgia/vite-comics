@@ -35,7 +35,8 @@ export default {
 </template>
 
 
-<style scoped>
+<style scoped lang="scss">
+@use "../styles/general.scss" as *;
 img {
     padding: 0 .25rem;
 }
@@ -46,7 +47,7 @@ img {
 
 .my-btn {
     background-color: transparent;
-    border: 2px solid rgb(0 118 255);
+    border: 2px solid $color-primary;
     padding: .75rem;
 }
 </style>

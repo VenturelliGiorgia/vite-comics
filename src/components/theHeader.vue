@@ -30,7 +30,8 @@ export default {
 </template>
 
 
-<style scoped>
+<style scoped lang="scss">
+@use "../styles/general.scss" as *;
 li {
     padding: 0 .35rem;
     list-style: none;
@@ -38,7 +39,7 @@ li {
 
 .active {
     width: 85px;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid $color-primary;
     position: absolute;
     top: 130px;
     left: 634px;

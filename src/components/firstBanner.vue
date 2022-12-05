@@ -3,7 +3,7 @@ export default {
 };
 </script>
 <template>
-    <div class="bg-primary">
+    <div class="my-bg-primary">
         <div class="container">
             <div class="p-5 text-white d-flex justify-content-between font-size-14">
                 <div>
@@ -33,6 +33,7 @@ export default {
 
 
 <style scoped>
+
 img {
     width: 60px;
     height: 60px;
